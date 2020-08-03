@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webi.covid19">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.webi.covid19.Activities.IndiaTotalStats"></activity>
+        <activity android:name="com.webi.covid19.Activities.DetailIndia" />
+        <activity android:name="com.webi.covid19.Activities.DetailCountry" />
+        <activity android:name="com.webi.covid19.Activities.IndiaActivity" />
+        <activity android:name="com.webi.covid19.Activities.AffectedCountries" />
+        <activity android:name="com.webi.covid19.Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4687730962574001~4386914211" />
+    </application>
+
+</manifest>
